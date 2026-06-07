@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Still &amp; Alive · p5.js Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Gowun+Batang:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob--pink"></span>
+    <span class="blob blob--blue"></span>
+    <span class="blob blob--magenta"></span>
+  </div>
+
+  <header class="masthead">
+    <p class="eyebrow">Creative Coding · p5.js</p>
+    <h1>Still <span class="amp">&amp;</span> <em>Alive</em></h1>
+    <p class="lede">정지한 화면과 움직이는 화면.<br /><span class="muted">(작품을 누르면 전체 화면으로 감상할 수 있어요.)</span></p>
+  </header>
+
+  <main id="projects" aria-label="작품 갤러리">
+    <!-- 1행: 과제 1(정적·추상) | 과제 4(동적·추상) -->
+    <a class="cell" href="sample1/index.html" aria-label="과제 1 정적 추상화 작품 열기">
+      <div class="frame frame--land">
+        <iframe src="sample1/index.html" title="과제 1 작품" loading="lazy" tabindex="-1"></iframe>
+      </div>
+      <figcaption>
+        <span class="tag tag--static">STATIC</span>
+        <span class="no">No.01</span>
+      </figcaption>
+    </a>
+
+    <a class="cell" href="sample4/index.html" aria-label="과제 4 동적 추상화 작품 열기">
+      <div class="frame frame--land">
+        <iframe src="sample4/index.html" title="과제 4 작품" loading="lazy" tabindex="-1"></iframe>
+      </div>
+      <figcaption>
+        <span class="tag tag--motion">MOTION</span>
+        <span class="no">No.04</span>
+      </figcaption>
+    </a>
+
+    <!-- 2행: 과제 2(정적·캐릭터) | 과제 3(동적·캐릭터) -->
+    <a class="cell" href="sample2/index.html" aria-label="과제 2 정적 캐릭터 작품 열기">
+      <div class="frame frame--port">
+        <iframe src="sample2/index.html" title="과제 2 작품" loading="lazy" tabindex="-1"></iframe>
+      </div>
+      <figcaption>
+        <span class="tag tag--static">STATIC</span>
+        <span class="no">No.02</span>
+      </figcaption>
+    </a>
+
+    <a class="cell" href="sample3/index.html" aria-label="과제 3 인터랙티브 캐릭터 작품 열기">
+      <div class="frame frame--port">
+        <iframe src="sample3/index.html" title="과제 3 작품" loading="lazy" tabindex="-1"></iframe>
+      </div>
+      <figcaption>
+        <span class="tag tag--motion">MOTION</span>
+        <span class="no">No.03</span>
+      </figcaption>
+    </a>
+  </main>
+
+  <footer class="colophon">
+    <span class="line"></span>
+    <p>made with p5.js · 2026</p>
+  </footer>
+</body>
+</html>
